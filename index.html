@@ -21,10 +21,17 @@ function moveDodgerLeft() {
     dodger.style.left = `${left - 1}px`
   }
 }
+
+function moveDodgerRight() {
+  
+}
       
 document.addEventListener('keydown', function(e) {
+  console.log(e.which)
   if (e.which === 37) {
     moveDodgerLeft()
+  } else if (e.which === 12) {
+    moveDodgerRight()
   }
 })      
   
